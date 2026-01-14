@@ -9,6 +9,6 @@ RUN mvn clean package -DskipTests
 
 FROM openjdk:17-alpine
 WORKDIR /app
-COPY --from=build /app/target/*.jar /app/app.jar
+COPY --from=build /app/target/inventorySonis-api.jar inventorySonis-api.jar
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","app.jar"]
+ENTRYPOINT ["java","-jar","inventorySonis-api.jar"]
