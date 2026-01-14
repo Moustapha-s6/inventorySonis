@@ -7,7 +7,7 @@ RUN mvn clean package -DskipTests
 
 # Package stage
 
-FROM openjdk:17-alpine
+FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
 COPY --from=build /app/target/inventorySonis-api.jar inventorySonis-api.jar
 EXPOSE 8080
