@@ -84,7 +84,9 @@ public class inventoryRestController {
 			 * 
 			 * return ResponseEntity.badRequest().body("Méthode HTTP non valide."); } }
 			 * 
-			 * 
+			 * Moustapha
 			 * return inventoryService.makeRequest(endpoint, httpMethod, body); }
 			 */
+
+
 }
